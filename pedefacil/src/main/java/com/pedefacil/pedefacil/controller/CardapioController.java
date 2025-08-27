@@ -18,7 +18,6 @@ public class CardapioController {
     public List<CardapioResponse>getAll(){
         return service.findAll();
 
-
     }
     @GetMapping ("/{id}")
     public CardapioResponse getById(@PathVariable Long id) {

@@ -129,6 +129,7 @@ O sistema ficará disponível em:
 👉 http://localhost:8080
 
 ## 👥 Equipe  
+# ![Foto da equipe iniciando o projeto pede facil](./fotoequipe.png)
 - Victor Figueira – Líder Técnico / Desenvolvedor Back-End (Spring Boot)  
 - Wesley Figueira – Desenvolvedor Back-End (APIs REST e Integração)  
 - Fábio Reis – Desenvolvedor Back-End (Modelagem de Domínio e Regras de Negócio)  

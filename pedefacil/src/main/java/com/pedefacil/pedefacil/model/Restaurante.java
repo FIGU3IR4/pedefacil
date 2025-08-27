@@ -13,8 +13,11 @@ public class Restaurante {
     private  Long id;
 
     private  String email;
-    private  String nome;
     private  String senha;
+    private  String nome;
+    private  String endereco;
+    private String numero;
+
 
     @OneToMany(mappedBy = "restaurante", cascade = CascadeType.ALL)
     private List<Cardapio> cardapios;

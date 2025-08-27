@@ -8,8 +8,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RestauranteResponse {
-    private  Long id;
+    private Long id;
+
     private  String email;
-    private  String nome;
     private  String senha;
+    private  String nome;
+    private  String endereco;
+    private String numero;
+
+
 }
