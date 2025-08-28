@@ -23,6 +23,12 @@ public class CardapioController {
     public CardapioResponse getById(@PathVariable Long id) {
         return service.findById(id);
     }
+    @GetMapping("/restaurante/{id}")
+    public List<CardapioResponse> getCardapioByRestaurante(@PathVariable Long id) {
+        return service.findByRestauranteId(id);
+    }
+
+
     @PostMapping
     public Cardapio create(@RequestBody Cardapio cardapio){
         return  service.save(cardapio);

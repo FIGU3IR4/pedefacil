@@ -7,15 +7,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RestauranteResponse {
+public class PratosResponse {
     private Long id;
 
-    private  String email;
-    private  String senha;
-    private  String nome;
-    private  String endereco;
-    private String numero;
-
+    private String nome;
+    private  String descricao;
+    private Double preco;
+    private  long cardapioId;
 
 }
-

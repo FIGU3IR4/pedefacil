@@ -1,10 +1,8 @@
 package com.pedefacil.pedefacil.service;
 
 
-import com.pedefacil.pedefacil.dto.CardapioResponse;
 import com.pedefacil.pedefacil.dto.RestauranteResponse;
 import com.pedefacil.pedefacil.model.Restaurante;
-import lombok.RequiredArgsConstructor;
 import com.pedefacil.pedefacil.repository.RestauranteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,5 +23,6 @@ public class RestauranteService {
 
         return  new RestauranteResponse(restaurante.getId(), restaurante.getEmail(), restaurante.getSenha(), restaurante.getNome(), restaurante.getEndereco(), restaurante.getNumero());
     }
+   
 
 }

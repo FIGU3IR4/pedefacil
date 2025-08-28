@@ -1,8 +1,6 @@
 package com.pedefacil.pedefacil.controller;
 
-import com.pedefacil.pedefacil.dto.CardapioResponse;
 import com.pedefacil.pedefacil.dto.RestauranteResponse;
-import com.pedefacil.pedefacil.service.CardapioService;
 import com.pedefacil.pedefacil.service.RestauranteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,6 +22,10 @@ public class RestauranteController {
     public  RestauranteResponse getById(@PathVariable Long id){
         return service.findById(id);
     }
+
+
+
+
 
 }
 
