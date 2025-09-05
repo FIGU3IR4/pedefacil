@@ -29,17 +29,17 @@ Dessa forma, o projeto trará agilidade, organização e redução de erros no a
 ---
 
 ## 🚀 Entrega 01  
-⚠️ **Status:** *Entrega em produção*  
+⚠️ **Status:** *Concluido*  
 
 📌 **Requisitos atendidos:**  
-- [ ] Histórias bem definidas (mínimo 7) com BDD  
-- [ ] Protótipo Lo-Fi no Figma (mínimo 5 histórias)  
-- [ ] Screencast de apresentação do protótipo (YouTube)  
+- [ ✅] Histórias bem definidas (mínimo 7) com BDD  
+- [ ✅] Protótipo Lo-Fi no Figma (mínimo 5 histórias)  
+- [ ✅] Screencast de apresentação do protótipo (YouTube)  
 
 📎 **Artefatos:**  
 - [Documento de Histórias](https://trello.com/b/0dliEqij/pede-facil)  
-- [Protótipo no Figma]()  
-- [Vídeo no YouTube]()  
+- [Protótipo no Figma](https://trello.com/invite/b/68a6405687a0bc40eb3db071/ATTIa8a67c7458ccfd9781a9799a3ddf7f91BC5A937A/pede-facil)  
+- [Vídeo no YouTube](https://youtu.be/r8hJVIy2clk)  
 
 ---
 
