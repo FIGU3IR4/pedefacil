@@ -38,7 +38,7 @@ Dessa forma, o projeto trará agilidade, organização e redução de erros no a
 
 📎 **Artefatos:**  
 - [Documento de Histórias](https://trello.com/b/0dliEqij/pede-facil)  
-- [Protótipo no Figma](https://trello.com/invite/b/68a6405687a0bc40eb3db071/ATTIa8a67c7458ccfd9781a9799a3ddf7f91BC5A937A/pede-facil)  
+- [Protótipo no Figma](https://www.figma.com/design/rM6kJKTfKaIOBLRFdH4Uh1/PROT%C3%93TIPO?node-id=0-1&t=f7BaxC7qSz3v2cwX-1)  
 - [Vídeo no YouTube](https://youtu.be/r8hJVIy2clk)  
 
 ---
