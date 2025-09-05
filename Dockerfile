@@ -5,7 +5,8 @@ FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 
 # Copia o JAR gerado pelo IntelliJ (ajuste o nome do .jar conforme o seu)
-COPY target/pedefacil-0.0.1-SNAPSHOT.jar app.jar
+COPY out/artifacts/pedefacil_jar/pedefacil.jar app.jar
+
 
 # Expõe a porta 8080
 EXPOSE 8080
