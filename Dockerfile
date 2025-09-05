@@ -8,7 +8,7 @@ WORKDIR /app
 COPY out/artifacts/pedefacil_jar/pedefacil.jar app.jar
 
 # Expõe a porta da aplicação
-EXPOSE 8080
+ENV SERVER_PORT=$PORT
 
 # Variáveis de ambiente para o Spring Boot (PostgreSQL)
 ENV SPRING_DATASOURCE_URL=jdbc:postgresql://ep-cool-wave-acc4qmrq-pooler.sa-east-1.aws.neon.tech:5432/neondb?sslmode=require
