@@ -7,7 +7,7 @@ WORKDIR /app
 # Copia o fat JAR gerado pelo IntelliJ
 COPY out/artifacts/pedefacil_jar/pedefacil.jar app.jar
 
-# Expõe a porta da aplicação
+# Expõe a porta da aplicação (usada pelo Render)
 ENV SERVER_PORT=$PORT
 
 # Variáveis de ambiente para o Spring Boot (PostgreSQL)
@@ -17,5 +17,5 @@ ENV SPRING_DATASOURCE_PASSWORD=npg_Df2LRxGK6Nlu
 ENV SPRING_JPA_HIBERNATE_DDL_AUTO=update
 ENV SPRING_JPA_SHOW_SQL=true
 
-# Comando para rodar a aplicação
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Comando para rodar a aplicação usando a porta do Render
+ENTRYPOINT ["sh", "-c", "java -jar app.jar --server.port=${SERVER_PORT}"]
