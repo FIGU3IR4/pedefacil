@@ -10,5 +10,11 @@ COPY out/artifacts/pedefacil_jar/pedefacil.jar app.jar
 # Expõe a porta 8080
 EXPOSE 8080
 
+# Passa as variáveis de ambiente para o Spring Boot
+# (opcional: você também pode definir no Render Environment)
+ENV DATABASE_URL=jdbc:postgresql://ep-cool-wave-acc4qmrq-pooler.sa-east-1.aws.neon.tech:5432/neondb?sslmode=require
+ENV DATABASE_USERNAME=neondb_owner
+ENV DATABASE_PASSWORD=npg_Df2LRxGK6Nlu
+
 # Comando para rodar a aplicação
 ENTRYPOINT ["java", "-jar", "app.jar"]
