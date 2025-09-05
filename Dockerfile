@@ -14,8 +14,5 @@ ENV SPRING_DATASOURCE_PASSWORD=npg_Df2LRxGK6Nlu
 ENV SPRING_JPA_HIBERNATE_DDL_AUTO=update
 ENV SPRING_JPA_SHOW_SQL=true
 
-# Força o Spring Boot a usar a porta fornecida pelo Render
-ENV JAVA_TOOL_OPTIONS="-Dserver.port=$PORT"
-
-# Comando para rodar a aplicação
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Comando para rodar a aplicação usando a porta fornecida pelo Render
+ENTRYPOINT ["sh", "-c", "java -jar app.jar --server.port=${PORT}"]
