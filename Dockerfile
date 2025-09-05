@@ -24,5 +24,6 @@ ENV SPRING_JPA_SHOW_SQL=true
 ENV PORT=10000
 EXPOSE $PORT
 
-# Rodar o script que espera o banco
-ENTRYPOINT ["./wait-for-db.sh"]
+# Roda o script que espera o banco e inicia a aplicação.
+# A linha ENTRYPOINT foi removida para evitar conflitos com o Render.
+CMD ["./wait-for-db.sh"]
