@@ -21,7 +21,7 @@ ENV SPRING_JPA_HIBERNATE_DDL_AUTO=update
 ENV SPRING_JPA_SHOW_SQL=true
 
 # Porta usada pelo Render
-ENV PORT=10000
+ENV PORT=8080
 EXPOSE $PORT
 
 # Roda o script que espera o banco e inicia a aplicação.
