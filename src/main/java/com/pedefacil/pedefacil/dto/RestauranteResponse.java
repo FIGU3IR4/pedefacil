@@ -11,7 +11,7 @@ public class RestauranteResponse {
     private Long id;
 
     private  String email;
-    private  String senha;
+
     private  String nome;
     private  String endereco;
     private String numero;

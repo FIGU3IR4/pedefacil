@@ -36,11 +36,10 @@ public class CardapioService {
                 .filter(c -> c.getRestaurante().getId().equals(restauranteId))
                 .map(c -> new CardapioResponse(c.getId(), c.getNome(), c.getRestaurante().getId()))
                 .toList();
-    }
+    };
 
 
 
 
 
-    ;
 }

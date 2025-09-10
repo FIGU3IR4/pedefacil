@@ -26,4 +26,20 @@ public class PratosService {
                 .toList();
     }
 
+    public List<PratosResponse> findByCardapioId(long cardapioId) {
+        return repository.findAll().stream()
+                .filter(c -> c.getCardapio().getId() == cardapioId)
+                .map(c -> new PratosResponse(
+                        c.getId(),
+                        c.getNome(),
+                        c.getDescricao(),
+                        c.getPreco(),
+                        c.getCardapio().getId()
+                ))
+                .toList();
+    }
+
+
+
+
 }
