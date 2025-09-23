@@ -56,6 +56,7 @@ Dessa forma, o projeto trará agilidade, organização e redução de erros no a
 📎 **Artefatos:**  
 - [Código Implementado]()  
 - [Fluxo do Cliente: Cardápio Digital e Atualização de Pedidos](https://www.youtube.com/shorts/NpYnYmv3klE)
+
 - ![Print Issue Tracker](./bugtracker.png)  
 
 ---
