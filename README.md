@@ -40,7 +40,7 @@ Dessa forma, o projeto trará agilidade, organização e redução de erros no a
 - [Documento de Histórias](https://trello.com/b/0dliEqij/pede-facil)  
 - [Protótipo no Figma](https://www.figma.com/design/rM6kJKTfKaIOBLRFdH4Uh1/PROT%C3%93TIPO?node-id=0-1&t=28u6vrtfaZKs9FIJ-1)  
 - [Conheça o App Pede Fácil| Apresentação Oficial](https://youtu.be/jsAPjRWsdQ8)
-- [Fluxo do Cliente: Cardápio Digital e Atualização de Pedidos] (https://www.youtube.com/shorts/NpYnYmv3klE)
+
   
 ---
 
@@ -55,8 +55,8 @@ Dessa forma, o projeto trará agilidade, organização e redução de erros no a
 
 📎 **Artefatos:**  
 - [Código Implementado]()  
-- [Screencast no YouTube]()  
-- ![Print Issue Tracker](./docs/issue-tracker.png)  
+- [Fluxo do Cliente: Cardápio Digital e Atualização de Pedidos] (https://www.youtube.com/shorts/NpYnYmv3klE)
+- ![Print Issue Tracker](bug tracker.png)  
 
 ---
 
@@ -133,7 +133,7 @@ O sistema ficará disponível em:
 # ![Foto da equipe iniciando o projeto pede facil](./fotoequipe.png)
 
 * A equipe sofreu uma redução com a saída de 3 integrantes antes da segunda entrega
-# ![Foto da equipe na segunda entrega](.foto equipe entrega 2.jpg)
+# ![Foto da equipe na segunda entrega](foto equipe entrega 2.jpg)
 
 - Victor Figueira – Líder Técnico / Desenvolvedor Back-End (Spring Boot)  
 - Fábio Reis – Desenvolvedor Back-End (Modelagem de Domínio e Regras de Negócio)  
