@@ -56,7 +56,7 @@ Dessa forma, o projeto trará agilidade, organização e redução de erros no a
 📎 **Artefatos:**  
 - [Código Implementado]()  
 - [Fluxo do Cliente: Cardápio Digital e Atualização de Pedidos] (https://www.youtube.com/shorts/NpYnYmv3klE)
-- ![Print Issue Tracker](bug tracker.png)  
+- ![Print Issue Tracker](./bug tracker.png)  
 
 ---
 
@@ -133,7 +133,7 @@ O sistema ficará disponível em:
 # ![Foto da equipe iniciando o projeto pede facil](./fotoequipe.png)
 
 * A equipe sofreu uma redução com a saída de 3 integrantes antes da segunda entrega
-# ![Foto da equipe na segunda entrega](foto equipe entrega 2.jpg)
+# ![Foto da equipe na segunda entrega](./foto equipe entrega 2.jpg)
 
 - Victor Figueira – Líder Técnico / Desenvolvedor Back-End (Spring Boot)  
 - Fábio Reis – Desenvolvedor Back-End (Modelagem de Domínio e Regras de Negócio)  
