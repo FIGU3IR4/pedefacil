@@ -32,9 +32,9 @@ Dessa forma, o projeto trará agilidade, organização e redução de erros no a
 ⚠️ **Status:** *Concluido*  
 
 📌 **Requisitos atendidos:**  
-- [ ✅] Histórias bem definidas (mínimo 7) com BDD  
-- [ ✅] Protótipo Lo-Fi no Figma (mínimo 5 histórias)  
-- [ ✅] Screencast de apresentação do protótipo (YouTube)  
+- ✅ Histórias bem definidas (mínimo 7) com BDD  
+- ✅ Protótipo Lo-Fi no Figma (mínimo 5 histórias)  
+- ✅ Screencast de apresentação do protótipo (YouTube)  
 
 📎 **Artefatos:**  
 - [Documento de Histórias](https://trello.com/b/0dliEqij/pede-facil)  
@@ -45,13 +45,13 @@ Dessa forma, o projeto trará agilidade, organização e redução de erros no a
 ---
 
 ## 🚀 Entrega 02  
-⚠️ **Status:** *Entrega em produção*  
+⚠️ **Status:** *Concluido*  
 
 📌 **Requisitos atendidos:**  
-- [ ] Implementação de pelo menos 2 histórias  
-- [ ] Commits frequentes no versionamento  
-- [ ] Uso de Issue/Bug Tracker  
-- [ ] Screencast demonstrando o sistema  
+- ✅ Implementação de pelo menos 2 histórias  
+- ✅ Commits frequentes no versionamento  
+- ✅ Uso de Issue/Bug Tracker  
+- ✅ Screencast demonstrando o sistema  
 
 📎 **Artefatos:**  
 - [Código Implementado]()  
@@ -108,7 +108,7 @@ Dessa forma, o projeto trará agilidade, organização e redução de erros no a
 ### ▶️ Executando com Maven  
 ```bash
 # Clonar o repositório
-git clone https://github.com/seu-usuario/seu-projeto.git
+git clone https://github.com/FIGU3IR4/pedefacil
 
 # Entrar na pasta
 cd seu-projeto
@@ -129,6 +129,10 @@ cd pedefacil
 ```
 O sistema ficará disponível em:
 👉 http://localhost:8080
+
+O sistema junto com o Frontend ficará disponível em: https://pedefacil.vercel.app
+
+esperar 2 minutos ate o projeto começar a fazer as requesições
 
 ## 👥 Equipe  
 # ![Foto da equipe iniciando o projeto pede facil](./fotoequipe.png)
