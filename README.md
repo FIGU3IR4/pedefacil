@@ -74,7 +74,7 @@ Dessa forma, o projeto trará agilidade, organização e redução de erros no a
 📎 **Artefatos:**  
 - [Código Refatorado]()  
 - [Testes Automatizados]()  
-- [Screencast no YouTube]()  
+- [ScreenCast no Youtube]([https://exemplo.com](https://youtu.be/q5XD1SljIvw))
 - ![Print Issue Tracker](bug tracker.png)  
 
 ---
