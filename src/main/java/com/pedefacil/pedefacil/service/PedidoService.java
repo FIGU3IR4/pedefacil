@@ -1,13 +1,13 @@
 package com.pedefacil.pedefacil.service;
 
-import com.pedefacil.pedefacil.dto.ItemPedidoResponse;
-import com.pedefacil.pedefacil.dto.PedidoResponse;
-import com.pedefacil.pedefacil.model.Pedido;
+import com.pedefacil.pedefacil.dto.*;
+import com.pedefacil.pedefacil.model.*;
 import com.pedefacil.pedefacil.repository.PedidoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -27,8 +27,33 @@ public class PedidoService {
         return mapToResponse(pedido);
     }
 
-    public Pedido save(Pedido pedido) {
-        return repository.save(pedido);
+    public PedidoResponse createPedido(PedidoRequest request) {
+        Pedido pedido = new Pedido();
+        pedido.setMesaNumero(request.getMesaNumero());
+        pedido.setNomeCliente(request.getNomeCliente());
+        pedido.setDataHora(LocalDateTime.now());
+
+        // associar o cardápio
+        Cardapio cardapio = new Cardapio();
+        cardapio.setId(request.getCardapioId());
+        pedido.setCardapio(cardapio);
+
+        // mapear itens
+        List<ItemPedido> itens = request.getItens().stream().map(i -> {
+            ItemPedido item = new ItemPedido();
+            Pratos prato = new Pratos();
+            prato.setId(i.getPratoId());
+            item.setPrato(prato);
+            item.setQuantidade(i.getQuantidade());
+            item.setPrecoUnitario(i.getPrecoUnitario());
+            item.setPedido(pedido);
+            return item;
+        }).toList();
+
+        pedido.setItens(itens);
+
+        Pedido salvo = repository.save(pedido);
+        return mapToResponse(salvo);
     }
 
     public void delete(Long id) {
@@ -52,9 +77,9 @@ public class PedidoService {
                 pedido.getItens().stream()
                         .map(i -> new ItemPedidoResponse(
                                 i.getId(),
-                                i.getPrato().getNome(),    // nome do prato
+                                i.getPrato().getNome(),
                                 i.getQuantidade(),
-                                i.getPrecoUnitario()       // preço unitário
+                                i.getPrecoUnitario()
                         ))
                         .toList()
         );
