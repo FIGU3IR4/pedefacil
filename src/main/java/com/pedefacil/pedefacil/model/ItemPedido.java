@@ -19,7 +19,10 @@ public class ItemPedido {
 
     @ManyToOne
     @JoinColumn(name = "prato_id", nullable = false)
-    private  Pratos prato;
+    private Pratos prato;
 
-
+    // Método extra para compatibilidade
+    public Double getPreco() {
+        return this.precoUnitario;
+    }
 }

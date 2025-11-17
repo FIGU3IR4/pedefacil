@@ -18,7 +18,9 @@ public class PedidoService {
     private PedidoRepository repository;
 
     public List<PedidoResponse> findAll() {
-        return repository.findAll().stream().map(this::mapToResponse).toList();
+        return repository.findAll().stream()
+                .map(this::mapToResponse)
+                .toList();
     }
 
     public PedidoResponse findById(Long id) {
@@ -32,6 +34,7 @@ public class PedidoService {
         pedido.setMesaNumero(request.getMesaNumero());
         pedido.setNomeCliente(request.getNomeCliente());
         pedido.setDataHora(LocalDateTime.now());
+        pedido.setStatus(PedidoStatus.PREPARANDO); // Define um status inicial
 
         // associar o cardápio
         Cardapio cardapio = new Cardapio();
@@ -81,7 +84,8 @@ public class PedidoService {
                                 i.getQuantidade(),
                                 i.getPrecoUnitario()
                         ))
-                        .toList()
+                        .toList(),
+                pedido.getStatus() // Incluído o status corretamente
         );
     }
 }

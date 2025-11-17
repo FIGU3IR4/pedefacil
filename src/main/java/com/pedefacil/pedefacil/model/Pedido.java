@@ -13,9 +13,12 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private  Integer mesaNumero;
-    private  String nomeCliente;
+    private Integer mesaNumero;
+    private String nomeCliente;
     private LocalDateTime dataHora;
+
+    @Enumerated(EnumType.STRING)
+    private PedidoStatus status;
 
     @ManyToOne
     @JoinColumn(name = "cardapio_id", nullable = false)
@@ -23,5 +26,4 @@ public class Pedido {
 
     @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
     private List<ItemPedido> itens;
-
 }
